@@ -1,0 +1,29 @@
+include ':app'
+
+include ':BaseLibrary'
+include ':UILibrary'
+include ':NetworkLibrary'
+include ':ShareLibrary'
+include ':ZXingLibrary'
+include ':MediaLibrary'
+include ':UtilsLibrary'
+include ':PayLibrary'
+include ':CrashLibrary'
+
+include ':LoginComponent'
+
+project(':BaseLibrary').projectDir=new File('../BaseLibrary')
+
+project(':UILibrary').projectDir=new File('../library/UILibrary')
+project(':NetworkLibrary').projectDir=new File('../library/NetworkLibrary')
+project(':ShareLibrary').projectDir=new File('../library/ShareLibrary')
+project(':ZXingLibrary').projectDir=new File('../library/ZXingLibrary')
+project(':UtilsLibrary').projectDir=new File('../library/UtilsLibrary')
+project(':PayLibrary').projectDir=new File('../library/PayLibrary')
+project(':CrashLibrary').projectDir=new File('../library/CrashLibrary')
+project(':MediaLibrary').projectDir=new File('../library/MediaLibrary')
+
+project(':LoginComponent').projectDir=new File('../component/LoginComponent')
+
+
+
