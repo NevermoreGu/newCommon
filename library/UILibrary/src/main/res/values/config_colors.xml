@@ -1,5 +1,5 @@
 <!--
- Tencent is pleased to support the open source community by making QMUI_Android available.
+ Tencent is pleased to support the open source community by making UI_Android available.
 
  Copyright (C) 2017-2018 THL A29 Limited, a Tencent company. All rights reserved.
 
@@ -16,11 +16,11 @@
 
 <resources>
     <!-- button -->
-    <color name="btn_ghost_blue_border_normal">@color/qmui_config_color_blue</color>
+    <color name="btn_ghost_blue_border_normal">@color/ui_config_color_blue</color>
     <color name="btn_ghost_blue_border_pressed">#801B88EE</color>
     <color name="btn_ghost_blue_border_disabled">#801B88EE</color>
 
-    <color name="btn_ghost_blue_text_normal">@color/qmui_config_color_blue</color>
+    <color name="btn_ghost_blue_text_normal">@color/ui_config_color_blue</color>
     <color name="btn_ghost_blue_text_pressed">#801B88EE</color>
     <color name="btn_ghost_blue_text_disabled">#801B88EE</color>
 
