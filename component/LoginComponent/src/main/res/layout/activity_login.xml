@@ -13,12 +13,12 @@
         android:background="@color/ui_dark_config_ui_item_bg"
         android:orientation="vertical">
 
-        <com.ui.widget.UINavigationView
+        <com.batman.ui.widget.UINavigationView
             android:id="@+id/uinv"
             android:layout_width="match_parent"
             android:layout_height="@dimen/ui_offset_top_bar">
 
-        </com.ui.widget.UINavigationView>
+        </com.batman.ui.widget.UINavigationView>
 
         <ImageView
             android:layout_width="wrap_content"
@@ -28,7 +28,7 @@
             android:src="@drawable/login_ic_user_head"/>
 
 
-        <com.ui.widget.UIClearEditText
+        <com.batman.ui.widget.UIClearEditText
             android:id="@+id/et_login_phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -44,7 +44,7 @@
 
             android:textSize="@dimen/ui_font_size_16"/>
 
-        <com.ui.widget.UIClearEditText
+        <com.batman.ui.widget.UIClearEditText
             android:id="@+id/et_login_user_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
         android:layout_marginTop="@dimen/ui_offset_40"
         android:text="@string/text_login"/>
 
-    <com.ui.alpha.UIAlphaTextView
+    <com.batman.ui.alpha.UIAlphaTextView
         android:id="@+id/tv_login_forget_passsword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

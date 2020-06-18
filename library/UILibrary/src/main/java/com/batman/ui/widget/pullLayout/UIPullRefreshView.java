@@ -17,20 +17,20 @@
 package com.batman.ui.widget.pullLayout;
 
 import android.content.Context;
+import android.support.annotation.ColorInt;
+import android.support.annotation.ColorRes;
+import android.support.v4.content.ContextCompat;
+import android.support.v4.util.SimpleArrayMap;
+import android.support.v4.widget.CircularProgressDrawable;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.DisplayMetrics;
-
-import android.support.annotation.ColorInt;
-import androidx.annotation.ColorRes;
-import android.support.v7.widget.AppCompatImageView;
-import androidx.collection.SimpleArrayMap;
-import androidx.core.content.ContextCompat;
-import androidx.swiperefreshlayout.widget.CircularProgressDrawable;
 
 import com.batman.ui.R;
 import com.batman.ui.skin.UISkinValueBuilder;
 import com.batman.ui.skin.defaultAttr.IUISkinDefaultAttrProvider;
 import com.batman.ui.util.UIResHelper;
+
 
 public class UIPullRefreshView extends AppCompatImageView implements UIPullLayout.ActionPullWatcherView, IUISkinDefaultAttrProvider {
     private static final int MAX_ALPHA = 255;

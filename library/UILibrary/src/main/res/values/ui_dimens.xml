@@ -27,6 +27,8 @@
     **********************************************-->
     <dimen name="ui_btn_text_size">16sp</dimen>
     <dimen name="ui_btn_border_width">1dp</dimen>
+    <dimen name="ui_btn_width">340dp</dimen>
+    <dimen name="ui_btn_height">44dp</dimen>
 
     <!--**********************************************
     *                  Switch                        *

@@ -7,7 +7,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 
-import com.batman.baselibrary.api.ResponseCode;
 import com.batman.baselibrary.base.BaseActivity;
 import com.batman.baselibrary.base.BaseObserver;
 import com.batman.baselibrary.utils.ToastUtils;
@@ -17,9 +16,9 @@ import com.batman.logincomponent.api.ApiParams;
 import com.batman.logincomponent.data.bean.request.VerifyPhoneRequest;
 import com.batman.logincomponent.data.bean.result.NoResult;
 import com.batman.logincomponent.viewmodel.LoginViewModel;
+import com.batman.ui.widget.UIClearEditText;
+import com.batman.ui.widget.UINavigationView;
 import com.network.Resource;
-import com.ui.widget.UIClearEditText;
-import com.ui.widget.UINavigationView;
 
 import java.util.HashMap;
 

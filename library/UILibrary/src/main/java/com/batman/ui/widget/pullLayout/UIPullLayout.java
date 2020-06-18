@@ -18,19 +18,18 @@ package com.batman.ui.widget.pullLayout;
 
 import android.content.Context;
 import android.content.res.TypedArray;
+import android.support.annotation.IntDef;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.view.NestedScrollingParent2;
+import android.support.v4.view.NestedScrollingParentHelper;
+import android.support.v4.view.ViewCompat;
+import android.support.v7.widget.RecyclerView;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
 import android.widget.OverScroller;
-
-import androidx.annotation.IntDef;
-import android.support.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.view.NestedScrollingParent3;
-import androidx.core.view.NestedScrollingParentHelper;
-import androidx.core.view.ViewCompat;
-import androidx.recyclerview.widget.RecyclerView;
 
 import com.batman.ui.Beta;
 import com.batman.ui.R;
@@ -42,7 +41,7 @@ import java.lang.annotation.RetentionPolicy;
 import static com.batman.ui.UIInterpolatorStaticHolder.QUNITIC_INTERPOLATOR;
 
 @Beta
-public class UIPullLayout extends FrameLayout implements NestedScrollingParent3 {
+public class UIPullLayout extends FrameLayout implements NestedScrollingParent2 {
     public static final float DEFAULT_PULL_RATE = 0.45f;
     public static final float DEFAULT_FLING_FRACTION = 0.002f;
     public static final float DEFAULT_SCROLL_SPEED_PER_PIXEL = 1.5f;
@@ -371,27 +370,27 @@ public class UIPullLayout extends FrameLayout implements NestedScrollingParent3 
         onNestedPreScroll(target, dx, dy, consumed, ViewCompat.TYPE_TOUCH);
     }
 
-    @Override
-    public void onNestedScroll(@NonNull View target, int dxConsumed, int dyConsumed,
-                               int dxUnconsumed, int dyUnconsumed, int type, @NonNull int[] consumed) {
-        int originDxUnconsumed = dxUnconsumed, originDyUnconsumed = dyUnconsumed;
-        dyUnconsumed = checkEdgeTopScrollDown(dyUnconsumed, consumed, type);
-        dyUnconsumed = checkEdgeBottomScrollDown(dyUnconsumed, consumed, type);
-        dyUnconsumed = checkEdgeTopScrollUp(dyUnconsumed, consumed, type);
-        dyUnconsumed = checkEdgeBottomScrollUp(dyUnconsumed, consumed, type);
-
-        dxUnconsumed = checkEdgeLeftScrollRight(dxUnconsumed, consumed, type);
-        dxUnconsumed = checkEdgeRightScrollRight(dxUnconsumed, consumed, type);
-        dxUnconsumed = checkEdgeLeftScrollLeft(dxUnconsumed, consumed, type);
-        dxUnconsumed = checkEdgeRightScrollLeft(dxUnconsumed, consumed, type);
-        if(dyUnconsumed == originDyUnconsumed && dxUnconsumed == originDxUnconsumed && mState == STATE_SETTLING_DELIVER){
-            checkStopTargetFling(target, dxUnconsumed, dyUnconsumed, type);
-        }
-    }
+//    @Override
+//    public void onNestedScroll(@NonNull View target, int dxConsumed, int dyConsumed,
+//                               int dxUnconsumed, int dyUnconsumed, int type, @NonNull int[] consumed) {
+//        int originDxUnconsumed = dxUnconsumed, originDyUnconsumed = dyUnconsumed;
+//        dyUnconsumed = checkEdgeTopScrollDown(dyUnconsumed, consumed, type);
+//        dyUnconsumed = checkEdgeBottomScrollDown(dyUnconsumed, consumed, type);
+//        dyUnconsumed = checkEdgeTopScrollUp(dyUnconsumed, consumed, type);
+//        dyUnconsumed = checkEdgeBottomScrollUp(dyUnconsumed, consumed, type);
+//
+//        dxUnconsumed = checkEdgeLeftScrollRight(dxUnconsumed, consumed, type);
+//        dxUnconsumed = checkEdgeRightScrollRight(dxUnconsumed, consumed, type);
+//        dxUnconsumed = checkEdgeLeftScrollLeft(dxUnconsumed, consumed, type);
+//        dxUnconsumed = checkEdgeRightScrollLeft(dxUnconsumed, consumed, type);
+//        if(dyUnconsumed == originDyUnconsumed && dxUnconsumed == originDxUnconsumed && mState == STATE_SETTLING_DELIVER){
+//            checkStopTargetFling(target, dxUnconsumed, dyUnconsumed, type);
+//        }
+//    }
 
     @Override
     public void onNestedScroll(@NonNull View target, int dxConsumed, int dyConsumed, int dxUnconsumed, int dyUnconsumed, int type) {
-        onNestedScroll(target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, type, mNestedScrollingV2ConsumedCompat);
+        onNestedScroll(target, dxConsumed, dyConsumed, dxUnconsumed, dyUnconsumed, type);
     }
 
     @Override

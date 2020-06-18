@@ -24,6 +24,7 @@ import android.graphics.Color;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.util.SimpleArrayMap;
 import android.text.TextUtils.TruncateAt;
@@ -37,6 +38,7 @@ import android.widget.Button;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 
+import com.batman.ui.R;
 import com.batman.ui.alpha.UIAlphaImageButton;
 import com.batman.ui.layout.UIRelativeLayout;
 import com.batman.ui.qqface.UIQQFaceView;
@@ -49,7 +51,6 @@ import com.batman.ui.util.UIDisplayHelper;
 import com.batman.ui.util.UILangHelper;
 import com.batman.ui.util.UIResHelper;
 import com.batman.ui.util.UIViewHelper;
-import com.batman.ui.R;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -19,6 +19,7 @@ package com.batman.ui.span;
 import android.content.res.Resources;
 import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
+import android.support.v4.view.ViewCompat;
 import android.text.TextPaint;
 import android.text.style.ClickableSpan;
 import android.view.View;
@@ -30,7 +31,6 @@ import com.batman.ui.skin.UISkinHelper;
 import com.batman.ui.skin.UISkinManager;
 import com.batman.ui.util.UIResHelper;
 
-import androidx.core.view.ViewCompat;
 
 /**
  * 可 Touch 的 Span，在 {@link #setPressed(boolean)} 后根据是否 pressed 来触发不同的UI状态

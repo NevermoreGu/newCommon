@@ -42,6 +42,11 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Typeface;
 import android.os.Build;
+import android.support.annotation.ColorInt;
+import android.support.annotation.RequiresApi;
+import android.support.v4.text.TextDirectionHeuristicsCompat;
+import android.support.v4.view.GravityCompat;
+import android.support.v4.view.ViewCompat;
 import android.text.TextPaint;
 import android.text.TextUtils;
 import android.view.Gravity;
@@ -50,11 +55,6 @@ import android.view.animation.Interpolator;
 
 import com.batman.ui.R;
 
-import android.support.annotation.ColorInt;
-import androidx.annotation.RequiresApi;
-import androidx.core.text.TextDirectionHeuristicsCompat;
-import androidx.core.view.GravityCompat;
-import androidx.core.view.ViewCompat;
 
 public final class UICollapsingTextHelper {
 

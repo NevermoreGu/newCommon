@@ -78,7 +78,7 @@ public class IMSClientBootstrap {
 
     public void sendHeartMessage() {
         if (isActive) {
-            ((NettyTcpClient) imsClient).sendHeartMessage();
+            ((NettyTcpClient)  imsClient).sendHeartMessage();
         }
     }
 

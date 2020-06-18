@@ -8,13 +8,13 @@
               android:orientation="vertical">
 
 
-    <com.ui.widget.UINavigationView
+    <com.batman.ui.widget.UINavigationView
         android:id="@+id/uinv"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ui_offset_top_bar"
         android:background="@color/ui_dark_config_ui_item_bg">
 
-    </com.ui.widget.UINavigationView>
+    </com.batman.ui.widget.UINavigationView>
 
 
     <TextView
@@ -38,7 +38,7 @@
         android:paddingRight="@dimen/ui_offset_10">
 
 
-        <com.ui.widget.UIClearEditText
+        <com.batman.ui.widget.UIClearEditText
             android:id="@+id/et_register_verification_code"
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -60,7 +60,7 @@
             android:layout_marginBottom="@dimen/ui_offset_12"
             android:background="@color/ui_config_color_line"></View>
 
-        <com.batman.baselibrary.widget.SendValidateButton
+        <com.batman.ui.widget.UISendValidateButton
             android:id="@+id/tv_register_verification_code"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -72,7 +72,7 @@
     </LinearLayout>
 
 
-    <com.ui.widget.UIClearEditText
+    <com.batman.ui.widget.UIClearEditText
         android:id="@+id/et_login_password"
         android:layout_width="match_parent"
         android:layout_height="@dimen/ui_offset_56"
@@ -119,7 +119,7 @@
             android:textSize="@dimen/ui_font_size_14"/>
     </LinearLayout>
 
-    <com.ui.alpha.UIAlphaTextView
+    <com.batman.ui.alpha.UIAlphaTextView
         android:id="@+id/tv_register_user_agreement"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

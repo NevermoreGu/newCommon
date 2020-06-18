@@ -6,14 +6,8 @@ import android.content.Context;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.ImageView;
-
-import com.batman.baselibrary.R;
-import com.ui.util.CustomDensityHelper;
-import com.ui.util.UIStatusBarHelper;
-import com.ui.widget.UINavigationView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -30,15 +24,15 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
     protected Activity mContext;
 
     protected void setDefaultBack() {
-        UINavigationView appBar = (UINavigationView) findViewById(R.id.uinv);
-        if (appBar != null) {
-            appBar.setNavigationBack(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    onBackPressed();
-                }
-            });
-        }
+//        UINavigationView appBar = (UINavigationView) findViewById(R.id.uinv);
+//        if (appBar != null) {
+//            appBar.setNavigationBack(new View.OnClickListener() {
+//                @Override
+//                public void onClick(View v) {
+//                    onBackPressed();
+//                }
+//            });
+//        }
     }
 
     @Override
@@ -50,7 +44,7 @@ public abstract class BaseActivity extends AppCompatActivity implements BaseView
             ButterKnife.bind(this);
             setDefaultBack();
         }
-        UIStatusBarHelper.setStatusBarLightMode(this);
+//        UIStatusBarHelper.setStatusBarLightMode(this);
         mContext = this;
         initViews();
         loadData(savedInstanceState);

@@ -78,7 +78,7 @@ public class UIBottomSheet extends UIBaseDialog {
         mRootView = container.findViewById(R.id.bottom_sheet);
         mBehavior = new UIBottomSheetBehavior<>();
         mBehavior.setHideable(cancelable);
-        mBehavior.addBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
+        mBehavior.setBottomSheetCallback(new BottomSheetBehavior.BottomSheetCallback() {
             @Override
             public void onStateChanged(@NonNull View bottomSheet, int newState) {
                 if (newState == BottomSheetBehavior.STATE_HIDDEN) {

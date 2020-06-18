@@ -5,9 +5,9 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.batman.baselibrary.base.BaseWebViewActivity;
+import com.batman.baselibrary.base.BaseActivity;
 import com.batman.logincomponent.R2;
-import com.ui.widget.UINavigationView;
+import com.batman.ui.widget.UINavigationView;
 
 import butterknife.BindView;
 
@@ -15,7 +15,7 @@ import butterknife.BindView;
  * Created by guqian on 2017/8/2.
  */
 
-public class ServiceWebActivity extends BaseWebViewActivity {
+public class ServiceWebActivity extends BaseActivity {
 
     @BindView(R2.id.uinv)
     UINavigationView mUinv;
@@ -34,19 +34,34 @@ public class ServiceWebActivity extends BaseWebViewActivity {
     }
 
     @Override
-    public void loadData(Bundle savedInstanceState) {
-        super.loadData(savedInstanceState);
-        mUrl = getIntent().getStringExtra("url");
-        mTitle = getIntent().getStringExtra("title");
-        mUinv.setNavigationTitle(mTitle);
-        mWebView.loadUrl(mUrl);
+    public int getLayoutId() {
+        return 0;
     }
 
     @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        if (mWebView != null) {
-            mWebView.destroy();
-        }
+    public void initViews() {
+
     }
+
+    @Override
+    public void loadData(Bundle savedInstanceState) {
+
+    }
+
+//    @Override
+//    public void loadData(Bundle savedInstanceState) {
+//        super.loadData(savedInstanceState);
+//        mUrl = getIntent().getStringExtra("url");
+//        mTitle = getIntent().getStringExtra("title");
+//        mUinv.setNavigationTitle(mTitle);
+//        mWebView.loadUrl(mUrl);
+//    }
+//
+//    @Override
+//    protected void onDestroy() {
+//        super.onDestroy();
+//        if (mWebView != null) {
+//            mWebView.destroy();
+//        }
+//    }
 }

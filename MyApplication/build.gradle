@@ -30,13 +30,13 @@ allprojects {
 //        maven { url 'http://developer.huawei.com/repo/' }
         maven { url "https://jitpack.io" }
 
-        maven { url 'https://dl.bintray.com/umsdk/release' }
-        maven {
-            url "http://maven.aliyun.com"
-        }
-        maven {
-            url "http://mvn.mob.com/android"
-        }
+//        maven { url 'https://dl.bintray.com/umsdk/release' }
+//        maven {
+//            url "http://maven.aliyun.com"
+//        }
+//        maven {
+//            url "http://mvn.mob.com/android"
+//        }
 
     }
 

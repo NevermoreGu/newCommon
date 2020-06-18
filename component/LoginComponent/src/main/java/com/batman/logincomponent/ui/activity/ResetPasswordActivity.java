@@ -18,10 +18,10 @@ import com.batman.logincomponent.api.ApiParams;
 import com.batman.logincomponent.data.bean.request.ResetPasswordRequest;
 import com.batman.logincomponent.data.bean.result.NoResult;
 import com.batman.logincomponent.viewmodel.LoginViewModel;
+import com.batman.ui.widget.UIClearEditText;
+import com.batman.ui.widget.UINavigationView;
 import com.network.Resource;
 import com.network.utils.MD5;
-import com.ui.widget.UIClearEditText;
-import com.ui.widget.UINavigationView;
 
 import java.util.HashMap;
 

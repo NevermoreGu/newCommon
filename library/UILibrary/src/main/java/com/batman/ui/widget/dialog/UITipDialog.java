@@ -19,6 +19,10 @@ package com.batman.ui.widget.dialog;
 import android.app.Dialog;
 import android.content.Context;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.IntDef;
+import android.support.annotation.LayoutRes;
+import android.support.annotation.Nullable;
+import android.support.v7.widget.AppCompatImageView;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.view.Gravity;
@@ -38,11 +42,6 @@ import com.batman.ui.widget.textview.UISpanTouchFixTextView;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
-
-import androidx.annotation.IntDef;
-import androidx.annotation.LayoutRes;
-import androidx.annotation.Nullable;
-import android.support.v7.widget.AppCompatImageView;
 
 /**
  * 提供一个浮层展示在屏幕中间, 一般使用 {@link Builder} 或 {@link CustomBuilder} 生成。

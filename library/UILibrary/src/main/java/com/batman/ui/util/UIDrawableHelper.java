@@ -34,16 +34,15 @@ import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.LayerDrawable;
 import android.graphics.drawable.ShapeDrawable;
 import android.support.annotation.ColorInt;
-import androidx.annotation.DrawableRes;
-import androidx.annotation.FloatRange;
-import androidx.annotation.Nullable;
+import android.support.annotation.DrawableRes;
+import android.support.annotation.FloatRange;
+import android.support.annotation.Nullable;
 import android.support.v7.content.res.AppCompatResources;
-import androidx.core.graphics.drawable.DrawableCompat;
-
 import android.view.View;
 import android.widget.ImageView;
 
 import com.batman.ui.UILog;
+
 
 /**
  * @author cginechen

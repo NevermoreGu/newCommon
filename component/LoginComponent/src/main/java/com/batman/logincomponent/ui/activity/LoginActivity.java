@@ -1,7 +1,5 @@
 package com.batman.logincomponent.ui.activity;
 
-import android.app.Activity;
-import android.app.Instrumentation;
 import android.arch.lifecycle.ViewModelProviders;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -28,16 +26,12 @@ import com.batman.logincomponent.api.ApiParams;
 import com.batman.logincomponent.data.bean.request.UserRequest;
 import com.batman.logincomponent.data.bean.request.WxLoginRequest;
 import com.batman.logincomponent.viewmodel.LoginViewModel;
-import com.batman.utils.TimeUtils;
+import com.batman.ui.widget.UINavigationView;
 import com.network.Resource;
 import com.network.im.AlarmManagerUtils;
 import com.network.utils.MD5;
 import com.share.weixin.login.WeiXinLoginUtils;
-import com.ui.widget.UINavigationView;
-import com.utils.FileUtils;
-import com.utils.RefInvokeUtils;
 
-import java.io.File;
 import java.io.RandomAccessFile;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
@@ -131,11 +125,6 @@ public class LoginActivity extends BaseLoginActivity {
             login();
         } else if (i == R.id.tv_login_forget_passsword) {
 
-            Instrumentation mInstrumentation = (Instrumentation) RefInvokeUtils.getFieldObject(Activity.class, this, "mInstrumentation");
-            Instrumentation evilInstrumentation = new EvilInstrumentation(mInstrumentation);
-            RefInvokeUtils.setFieldObject(Activity.class, this, "mInstrumentation", evilInstrumentation);
-
-            startActivity(new Intent(this, FindPasswordActivity.class));
 //            ActivityUtils.openActivity(RouterConstants.LOGIN_COMPONENT_FIND_PASSWORD_PATH);
 
         } else if (i == R.id.img_login_wei_chat) {
@@ -268,12 +257,12 @@ public class LoginActivity extends BaseLoginActivity {
 
     public static void appendText(Context context) {
 
-        String path = context.getExternalCacheDir() + "/im";
-        File logFile = FileUtils.createFile(path, "imlog");
-
-        if (logFile != null) {
-            appendText(logFile.getAbsolutePath(), TimeUtils.getNowString() + "onReceive 开始发送心跳\n");
-        }
+//        String path = context.getExternalCacheDir() + "/im";
+//        File logFile = FileUtils.createOrExistsFile(path, "imlog");
+//
+//        if (logFile != null) {
+//            appendText(logFile.getAbsolutePath(), TimeUtils.getNowString() + "onReceive 开始发送心跳\n");
+//        }
 
     }
 

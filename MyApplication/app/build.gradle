@@ -80,7 +80,8 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    api project(':LoginComponent')
+//    api project(':LoginComponent')
+    api project(':BaseLibrary')
 
     annotationProcessor "com.alibaba:arouter-compiler:$rootProject.arouterCompilerVersion"
     annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterknifeCompilerVersion"

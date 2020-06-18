@@ -2,16 +2,13 @@ package com.batman.myapplication;
 
 import android.util.Log;
 
-import com.batman.baselibrary.api.RequestHeadParam;
+import com.batman.baselibrary.base.BaseApplication;
 import com.batman.baselibrary.delegate.ApplicationDelegate;
-import com.batman.logincomponent.LoginApplication;
 import com.crash.ICrashCallback;
 import com.crash.TombstoneManager;
 import com.network.http.HttpHandler;
 
 import java.io.File;
-import java.util.HashMap;
-import java.util.Map;
 
 import okhttp3.Interceptor;
 import okhttp3.Request;
@@ -33,7 +30,7 @@ public class MyApplication extends ApplicationDelegate {
 
     @Override
     public Class[] subDelegates() {
-        return new Class[]{LoginApplication.class};
+        return new Class[]{BaseApplication.class};
     }
 
     @Override
@@ -130,14 +127,15 @@ public class MyApplication extends ApplicationDelegate {
 
             @Override
             public Request onHttpRequestBefore(Interceptor.Chain chain, Request request) {
-                HashMap<String, String> hashHeads = RequestHeadParam.getInstance().getBaseParameters();
-                Request.Builder builder = request.newBuilder();
-                for (Map.Entry<String, String> entry : hashHeads.entrySet()) {
-                    String name = entry.getKey();
-                    String value = entry.getValue();
-                    builder.addHeader(name, value);
-                }
-                return builder.build();
+                return request;
+//                HashMap<String, String> hashHeads = RequestHeadParam.getInstance().getBaseParameters();
+//                Request.Builder builder = request.newBuilder();
+//                for (Map.Entry<String, String> entry : hashHeads.entrySet()) {
+//                    String name = entry.getKey();
+//                    String value = entry.getValue();
+//                    builder.addHeader(name, value);
+//                }
+//                return builder.build();
             }
         };
     }

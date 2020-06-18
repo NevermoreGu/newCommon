@@ -19,6 +19,11 @@ package com.batman.ui.widget.grouplist;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.IntDef;
+import android.support.constraint.ConstraintLayout;
+import android.support.constraint.Placeholder;
+import android.support.v7.widget.AppCompatCheckBox;
+import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.LayoutInflater;
@@ -38,11 +43,6 @@ import com.batman.ui.util.UIResHelper;
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 
-import androidx.annotation.IntDef;
-import android.support.v7.widget.AppCompatCheckBox;
-import android.support.v7.widget.AppCompatImageView;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.constraintlayout.widget.Placeholder;
 
 /**
  * 作为通用列表 {@link UIGroupListView} 里的 item 使用，也可以单独使用。

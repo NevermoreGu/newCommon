@@ -22,9 +22,12 @@ public class UISkinRuleTextCompoundTintColorHandler extends UISkinRuleColorState
             TextView tv = (TextView) view;
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
                 tv.setCompoundDrawableTintList(colorStateList);
-            } else if (tv instanceof TintableCompoundDrawablesView) {
-                ((TintableCompoundDrawablesView) tv).setSupportCompoundDrawablesTintList(colorStateList);
-            } else {
+            }
+//            else if (tv instanceof TintableCompoundDrawablesView) {
+//                ((TintableCompoundDrawablesView) tv).setSupportCompoundDrawablesTintList(colorStateList);
+//            }
+
+            else {
                 Drawable[] drawables = tv.getCompoundDrawables();
                 for (int i = 0; i < drawables.length; i++) {
                     Drawable drawable = drawables[i];

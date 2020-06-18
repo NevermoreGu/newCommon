@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import com.batman.baselibrary.RouterConstants;
 import com.batman.baselibrary.utils.ActivityUtils;
 
+
 public class MainActivity extends AppCompatActivity {
 
     @Override

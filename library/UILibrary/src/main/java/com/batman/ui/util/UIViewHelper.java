@@ -36,10 +36,8 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.support.annotation.ColorInt;
 import android.support.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
-import androidx.core.widget.ImageViewCompat;
-
+import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.view.TouchDelegate;
 import android.view.View;
 import android.view.ViewGroup;
@@ -53,6 +51,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.ListView;
 
+import com.batman.ui.R;
 import com.batman.ui.widget.pullRefreshLayout.UIPullRefreshLayout;
 
 import java.util.ArrayList;
@@ -70,7 +69,7 @@ public class UIViewHelper {
 
 
     private static final int[] APPCOMPAT_CHECK_ATTRS = {
-            android.support.v7.R.attr.colorPrimary
+           R.attr.colorPrimary
     };
 
     public static void checkAppCompatTheme(Context context) {

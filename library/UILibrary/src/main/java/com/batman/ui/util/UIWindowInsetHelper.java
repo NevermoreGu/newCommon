@@ -21,6 +21,13 @@ import android.annotation.TargetApi;
 import android.content.res.Configuration;
 import android.graphics.Rect;
 import android.os.Build;
+import android.support.annotation.NonNull;
+import android.support.constraint.ConstraintLayout;
+import android.support.design.widget.CoordinatorLayout;
+import android.support.v4.view.OnApplyWindowInsetsListener;
+import android.support.v4.view.ViewCompat;
+import android.support.v4.view.WindowInsetsCompat;
+import android.support.v4.widget.DrawerLayout;
 import android.view.DisplayCutout;
 import android.view.Gravity;
 import android.view.View;
@@ -31,19 +38,11 @@ import android.widget.FrameLayout;
 
 import com.batman.ui.R;
 import com.batman.ui.widget.INotchInsetConsumer;
-import com.batman.ui.widget.IWindowInsetLayout;
 import com.batman.ui.widget.IWindowInsetKeyboardConsumer;
+import com.batman.ui.widget.IWindowInsetLayout;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
-
-import android.support.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.coordinatorlayout.widget.CoordinatorLayout;
-import androidx.core.view.OnApplyWindowInsetsListener;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-import androidx.drawerlayout.widget.DrawerLayout;
 
 /**
  * @author cginechen

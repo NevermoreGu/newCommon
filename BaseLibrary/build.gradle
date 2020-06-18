@@ -49,6 +49,8 @@ android {
     }
 
     dexOptions {
+        preDexLibraries false
+        jumboMode true
         javaMaxHeapSize "4g"
     }
 
@@ -68,7 +70,7 @@ dependencies {
     api project(':UtilsLibrary')
     api project(':PayLibrary')
     api project(':CrashLibrary')
-    api project(':MediaLibrary')
+//    api project(':MediaLibrary')
     api 'com.android.support:multidex:1.0.1'
     //RxPermissions
     api 'com.github.tbruyelle:rxpermissions:0.10.2'

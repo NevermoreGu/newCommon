@@ -81,6 +81,8 @@ import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;
 import java.util.ArrayList;
 
+import static android.support.annotation.RestrictTo.Scope.LIBRARY_GROUP;
+
 
 /**
  * 参考 {@link CollapsingToolbarLayout}, 适配 UITopBar
@@ -213,7 +215,7 @@ public class UICollapsingTopBarLayout extends FrameLayout implements IWindowInse
         setWillNotDraw(false);
 
         ViewCompat.setOnApplyWindowInsetsListener(this,
-                new androidx.core.view.OnApplyWindowInsetsListener() {
+                new android.support.v4.view.OnApplyWindowInsetsListener() {
                     @Override
                     public WindowInsetsCompat onApplyWindowInsets(View v, WindowInsetsCompat insets) {
                         return setWindowInsets(insets);

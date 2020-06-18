@@ -22,12 +22,11 @@ import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
+import android.support.annotation.Nullable;
+import android.support.v4.content.ContextCompat;
 import android.text.TextUtils;
 import android.util.TypedValue;
 import android.widget.TextView;
-
-import androidx.annotation.Nullable;
-import androidx.core.content.ContextCompat;
 
 import com.batman.ui.R;
 

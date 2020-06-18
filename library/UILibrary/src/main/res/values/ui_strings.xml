@@ -22,4 +22,7 @@
 
     <string name="app_name">UI</string>
     <string name="ui_cancel">取&#160;消</string>
+
+    <string name="send_code">获取验证码</string>
+    <string name="second">秒</string>
 </resources>

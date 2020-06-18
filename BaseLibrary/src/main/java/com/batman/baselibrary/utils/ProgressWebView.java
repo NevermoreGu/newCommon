@@ -19,7 +19,7 @@ public class ProgressWebView extends WebView {
     public ProgressWebView(Context context, AttributeSet attrs) {
         super(context, attrs);
         progressbar = new ProgressBar(context, null, android.R.attr.progressBarStyleHorizontal);
-        progressbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        progressbar.setBackgroundColor(getResources().getColor(R.color.qr_code_white));
         progressbar.setLayoutParams(new LayoutParams(LayoutParams.MATCH_PARENT, 3, 0, 0));
         addView(progressbar);
         //        setWebViewClient(new WebViewClient(){});

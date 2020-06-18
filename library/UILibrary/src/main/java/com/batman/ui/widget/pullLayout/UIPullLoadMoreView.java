@@ -21,16 +21,14 @@ import android.content.res.ColorStateList;
 import android.content.res.TypedArray;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
+import android.support.constraint.ConstraintLayout;
+import android.support.v4.widget.ImageViewCompat;
+import android.support.v7.widget.AppCompatImageView;
+import android.support.v7.widget.AppCompatTextView;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
 import android.view.ViewGroup;
-
-import android.support.v7.widget.AppCompatImageView;
-import android.support.v7.widget.AppCompatTextView;
-import androidx.collection.SimpleArrayMap;
-import androidx.constraintlayout.widget.ConstraintLayout;
-import androidx.core.widget.ImageViewCompat;
 
 import com.batman.ui.R;
 import com.batman.ui.skin.UISkinHelper;

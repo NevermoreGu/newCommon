@@ -22,10 +22,10 @@ import com.batman.logincomponent.data.bean.request.VERIFY;
 import com.batman.logincomponent.data.bean.request.VerifyRequest;
 import com.batman.logincomponent.data.bean.result.VerifyResult;
 import com.batman.logincomponent.viewmodel.LoginViewModel;
+import com.batman.ui.widget.UIClearEditText;
+import com.batman.ui.widget.UINavigationView;
 import com.batman.utils.RegexUtils;
 import com.network.Resource;
-import com.ui.widget.UIClearEditText;
-import com.ui.widget.UINavigationView;
 
 import java.util.HashMap;
 

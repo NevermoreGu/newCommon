@@ -6,7 +6,6 @@ import android.content.DialogInterface;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
 
-import com.batman.baselibrary.utils.TipDialogUtils;
 import com.batman.baselibrary.utils.ToastUtils;
 import com.network.Exception.NetworkException;
 import com.network.Resource;
@@ -73,12 +72,12 @@ public abstract class BaseObserver<T> implements Observer<Resource<T>> {
     }
 
     public void uiLoading() {
-        TipDialogUtils.showProgressDialog(mContext, "", true, new DialogInterface.OnCancelListener() {
-            @Override
-            public void onCancel(DialogInterface dialog) {
-                uiCancel(dialog);
-            }
-        });
+//        TipDialogUtils.showProgressDialog(mContext, "", true, new DialogInterface.OnCancelListener() {
+//            @Override
+//            public void onCancel(DialogInterface dialog) {
+//                uiCancel(dialog);
+//            }
+//        });
     }
 
     public void uiCancel(DialogInterface dialog) {
@@ -86,7 +85,7 @@ public abstract class BaseObserver<T> implements Observer<Resource<T>> {
     }
 
     public void dismissDialog() {
-        TipDialogUtils.dismissProgressDialog();
+//        TipDialogUtils.dismissProgressDialog();
     }
 
     public void uiComplete(Resource<T> tResource) {

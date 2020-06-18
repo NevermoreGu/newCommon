@@ -19,19 +19,18 @@ import android.app.Activity;
 import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
+import android.support.annotation.Nullable;
+import android.support.v7.app.AppCompatActivity;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 
-import com.batman.ui.UILog;
 import com.batman.ui.R;
+import com.batman.ui.UILog;
 import com.batman.ui.util.UILangHelper;
 
 import java.lang.ref.WeakReference;
 import java.util.HashMap;
-
-import androidx.annotation.Nullable;
-import android.support.v7.app.AppCompatActivity;
 
 public class UISkinLayoutInflaterFactory implements LayoutInflater.Factory2 {
     private static final String TAG = "UISkin";

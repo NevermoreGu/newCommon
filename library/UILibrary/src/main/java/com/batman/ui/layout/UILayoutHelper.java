@@ -28,6 +28,8 @@ import android.graphics.PorterDuff;
 import android.graphics.PorterDuffXfermode;
 import android.graphics.RectF;
 import android.os.Build;
+import android.support.annotation.ColorInt;
+import android.support.v4.content.ContextCompat;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewOutlineProvider;
@@ -36,9 +38,6 @@ import com.batman.ui.R;
 import com.batman.ui.util.UIResHelper;
 
 import java.lang.ref.WeakReference;
-
-import android.support.annotation.ColorInt;
-import androidx.core.content.ContextCompat;
 
 /**
  * @author cginechen

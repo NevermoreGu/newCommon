@@ -24,6 +24,7 @@ import android.os.Trace;
 import android.support.annotation.MainThread;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v4.util.SimpleArrayMap;
 import android.support.v4.view.ViewPager;
 import android.support.v7.widget.RecyclerView;
@@ -37,6 +38,8 @@ import android.widget.AdapterView;
 import android.widget.PopupWindow;
 import android.widget.TextView;
 
+import com.batman.ui.BuildConfig;
+import com.batman.ui.R;
 import com.batman.ui.UILog;
 import com.batman.ui.qqface.UIQQFaceView;
 import com.batman.ui.skin.annotation.UISkinListenWithHierarchyChange;
@@ -59,8 +62,6 @@ import com.batman.ui.skin.handler.UISkinRuleTintColorHandler;
 import com.batman.ui.skin.handler.UISkinRuleUnderlineHandler;
 import com.batman.ui.util.UILangHelper;
 import com.batman.ui.util.UIResHelper;
-import com.ui.BuildConfig;
-import com.batman.ui.R;
 
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;

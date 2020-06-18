@@ -15,7 +15,7 @@ public class UISkinRuleHintColorHandler extends UISkinRuleColorStateListHandler 
         if (view instanceof TextView) {
             ((TextView) view).setHintTextColor(colorStateList);
         } else if (view instanceof TextInputLayout) {
-            ((TextInputLayout) view).setHintTextColor(colorStateList);
+//            ((TextInputLayout) view).setHintTextColor(colorStateList);
         }else if(view instanceof UISlider){
             ((UISlider)view).setBarProgressColor(colorStateList.getDefaultColor());
         }else{
