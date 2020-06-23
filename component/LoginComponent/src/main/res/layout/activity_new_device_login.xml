@@ -46,7 +46,6 @@
             android:background="@null"
             android:gravity="center_vertical"
             android:hint="@string/hint_input_verification_code"
-            android:textColor="@color/ui_dark_config_color_three_text"
 
             android:textSize="@dimen/ui_font_size_16"/>
 

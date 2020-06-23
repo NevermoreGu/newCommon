@@ -35,6 +35,7 @@
             android:layout_marginTop="@dimen/ui_offset_24"
             android:background="@drawable/ui_edit_bg_border_bottom"
             android:drawableLeft="@drawable/login_ic_user"
+            android:textColorHint="@color/ui_dark_config_color_un_enable"
             android:drawablePadding="@dimen/ui_offset_16"
             android:hint="@string/hint_input_phone_number"
             android:paddingLeft="@dimen/ui_offset_10"
@@ -81,7 +82,7 @@
         android:layout_marginTop="@dimen/ui_offset_18"
         android:layout_marginRight="@dimen/ui_offset_10"
         android:text="@string/text_forget_password"
-        android:textColor="@color/ui_dark_config_color_three_text"
+        android:textColor="@color/ui_dark_config_color_text_assist_1"
         android:textSize="@dimen/ui_font_size_14"/>
 
     <TextView
@@ -92,7 +93,16 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/ui_offset_84"
         android:text="@string/text_other_login"
-        android:textColor="@color/ui_dark_config_color_three_text"
+        android:textColor="@color/ui_dark_config_color_text_assist_2"
+        android:textSize="@dimen/ui_font_size_14"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_login_other_login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/ui_offset_10"
+        android:text="@string/text_other_login"
         android:textSize="@dimen/ui_font_size_14"/>
 
     <ImageView

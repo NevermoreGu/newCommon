@@ -25,7 +25,6 @@
         android:paddingLeft="@dimen/ui_offset_10"
         android:paddingRight="@dimen/ui_offset_10"
         android:text="需要绑定您的手机号"
-        android:textColor="@color/ui_dark_config_color_three_text"
         android:textSize="@dimen/ui_font_size_16"/>
 
     <com.batman.ui.widget.UIClearEditText

@@ -22,7 +22,7 @@
         android:gravity="center"
         android:layout_centerInParent="true"
         android:singleLine="true"
-        android:textColor="@color/ui_dark_config_color_title"
+        android:textColor="@color/ui_dark_config_color_text_title"
         android:textSize="@dimen/ui_font_top_bar_title"/>
 
     <RelativeLayout
