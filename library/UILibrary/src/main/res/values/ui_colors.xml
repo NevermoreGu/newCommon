@@ -91,4 +91,5 @@
     <color name="ui_config_color_main">#367cdd</color>
     <color name="ui_config_color_button">#367cdd</color>
     <color name="ui_config_color_button_pressed">#0348A8</color>
+    <color name="ui_config_color_button_un_enable">#6E9EE4</color>
 </resources>

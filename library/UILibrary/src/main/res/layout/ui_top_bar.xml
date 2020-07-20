@@ -51,7 +51,7 @@
             android:scaleType="centerInside"
             android:visibility="gone"/>
 
-        <com.ui.alpha.UIAlphaTextView
+        <com.batman.ui.alpha.UIAlphaTextView
             android:id="@+id/tv_app_right"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

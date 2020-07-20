@@ -165,7 +165,6 @@
 
     <Button
         android:id="@+id/btn_login_login"
-        style="@style/CommonEnableButton"
         android:layout_width="@dimen/ui_btn_width"
         android:layout_height="@dimen/ui_btn_height"
         android:layout_gravity="center_horizontal"

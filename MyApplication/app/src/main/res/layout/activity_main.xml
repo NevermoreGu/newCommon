@@ -8,6 +8,9 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <com.batman.ui.widget.UINavigationView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_40"></com.batman.ui.widget.UINavigationView>
 
     <TextView
         android:layout_width="wrap_content"

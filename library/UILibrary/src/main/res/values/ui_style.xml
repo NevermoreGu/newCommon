@@ -96,11 +96,6 @@
         <item name="android:background">@drawable/ui_s_white_border_rudius_bg</item>
     </style>
 
-    <style name="CommonEnableButton" parent="@android:style/Widget.Button">
-        <item name="android:textSize">@dimen/ui_font_size_18</item>
-        <item name="android:textColor">@color/ui_config_color_white</item>
-        <item name="android:background">@drawable/ui_s_button_bg</item>
-    </style>
 
     <style name="CustomDialog" parent="android:style/Theme.Dialog">
         <item name="android:background">#00000000</item>
