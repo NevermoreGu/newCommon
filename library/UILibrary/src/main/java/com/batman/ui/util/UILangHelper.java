@@ -17,7 +17,7 @@
 package com.batman.ui.util;
 
 
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 
 import java.io.Closeable;
 import java.io.IOException;

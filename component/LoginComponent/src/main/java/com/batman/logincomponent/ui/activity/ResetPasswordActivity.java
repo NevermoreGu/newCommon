@@ -1,6 +1,5 @@
 package com.batman.logincomponent.ui.activity;
 
-import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.widget.Button;
@@ -25,6 +24,7 @@ import com.network.utils.MD5;
 
 import java.util.HashMap;
 
+import androidx.lifecycle.ViewModelProviders;
 import butterknife.BindView;
 import butterknife.OnClick;
 

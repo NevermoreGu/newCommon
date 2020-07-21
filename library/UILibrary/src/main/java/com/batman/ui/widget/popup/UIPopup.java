@@ -19,7 +19,7 @@ package com.batman.ui.widget.popup;
 import android.content.Context;
 import android.view.View;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 
 public class UIPopup extends UINormalPopup<UIPopup> {

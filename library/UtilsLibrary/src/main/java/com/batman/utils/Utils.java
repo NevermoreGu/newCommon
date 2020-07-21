@@ -3,8 +3,8 @@ package com.batman.utils;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.Application;
-import android.arch.lifecycle.Lifecycle;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.Lifecycle;
+import androidx.annotation.NonNull;
 import android.util.Log;
 
 public final class Utils {

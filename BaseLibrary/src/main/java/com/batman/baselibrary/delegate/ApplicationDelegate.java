@@ -2,7 +2,7 @@ package com.batman.baselibrary.delegate;
 
 import android.content.Context;
 import android.content.res.Configuration;
-import android.support.multidex.MultiDexApplication;
+import androidx.multidex.MultiDexApplication;
 import android.util.Log;
 
 import com.batman.baselibrary.di.component.AppComponent;

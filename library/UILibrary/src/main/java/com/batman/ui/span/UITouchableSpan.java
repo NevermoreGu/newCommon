@@ -17,9 +17,9 @@
 package com.batman.ui.span;
 
 import android.content.res.Resources;
-import android.support.annotation.ColorInt;
-import android.support.annotation.NonNull;
-import android.support.v4.view.ViewCompat;
+import androidx.annotation.ColorInt;
+import androidx.annotation.NonNull;
+import androidx.core.view.ViewCompat;
 import android.text.TextPaint;
 import android.text.style.ClickableSpan;
 import android.view.View;

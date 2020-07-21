@@ -2,8 +2,8 @@ package com.batman.utils;
 
 import android.content.ContentResolver;
 import android.provider.Settings;
-import android.support.annotation.IntRange;
-import android.support.annotation.NonNull;
+import androidx.annotation.IntRange;
+import androidx.annotation.NonNull;
 import android.view.Window;
 import android.view.WindowManager;
 

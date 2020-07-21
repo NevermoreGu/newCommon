@@ -18,8 +18,8 @@ package com.batman.ui.widget.roundwidget;
 
 import android.content.Context;
 import android.content.res.ColorStateList;
-import android.support.annotation.Nullable;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.annotation.Nullable;
+import androidx.collection.SimpleArrayMap;
 import android.util.AttributeSet;
 
 import com.batman.ui.R;

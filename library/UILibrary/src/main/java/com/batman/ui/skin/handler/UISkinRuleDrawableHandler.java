@@ -19,7 +19,7 @@ import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.view.View;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.batman.ui.skin.UISkinManager;
 import com.batman.ui.util.UIResHelper;

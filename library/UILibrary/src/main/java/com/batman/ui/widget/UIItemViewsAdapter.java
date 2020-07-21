@@ -16,7 +16,7 @@
 
 package com.batman.ui.widget;
 
-import android.support.v4.util.Pools;
+import androidx.core.util.Pools;
 import android.view.View;
 import android.view.ViewGroup;
 

@@ -17,7 +17,7 @@
 package com.batman.ui.widget;
 
 import android.content.Context;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.collection.SimpleArrayMap;
 import android.util.AttributeSet;
 import android.view.View;
 import android.view.ViewGroup;

@@ -1,6 +1,6 @@
 package com.batman.ui.kotlin
 
-import android.support.constraint.ConstraintLayout
+import androidx.constraintlayout.widget.ConstraintLayout
 import android.view.ViewGroup
 
 val matchParent: Int = ViewGroup.LayoutParams.MATCH_PARENT

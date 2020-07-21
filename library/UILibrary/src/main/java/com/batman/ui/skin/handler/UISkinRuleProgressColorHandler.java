@@ -15,7 +15,7 @@
  */
 package com.batman.ui.skin.handler;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.batman.ui.skin.UISkinHelper;

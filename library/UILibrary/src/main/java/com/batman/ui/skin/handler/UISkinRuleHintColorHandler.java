@@ -1,8 +1,8 @@
 package com.batman.ui.skin.handler;
 
 import android.content.res.ColorStateList;
-import android.support.annotation.NonNull;
-import android.support.design.widget.TextInputLayout;
+import androidx.annotation.NonNull;
+import com.google.android.material.textfield.TextInputLayout;
 import android.view.View;
 import android.widget.TextView;
 

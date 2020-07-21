@@ -16,7 +16,7 @@
 package com.batman.ui.skin.handler;
 
 import android.content.res.ColorStateList;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.batman.ui.layout.IUILayout;

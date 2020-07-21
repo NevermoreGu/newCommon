@@ -1,7 +1,7 @@
 package com.batman.utils;
 
 import android.annotation.SuppressLint;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.batman.utils.constant.TimeConstants;
 

@@ -16,8 +16,8 @@
 
 package com.network;
 
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 
 import static com.network.Status.COMPLETE;
 import static com.network.Status.ERROR;

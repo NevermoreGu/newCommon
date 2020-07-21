@@ -1,9 +1,9 @@
 package com.batman.baselibrary.base;
 
-import android.arch.lifecycle.Observer;
+import androidx.lifecycle.Observer;
 import android.content.Context;
 import android.content.DialogInterface;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.text.TextUtils;
 
 import com.batman.baselibrary.utils.ToastUtils;

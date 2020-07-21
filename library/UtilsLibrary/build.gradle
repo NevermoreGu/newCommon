@@ -6,10 +6,10 @@ android {
     defaultConfig {
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
-        versionCode 1
-        versionName "1.0.0"
+        versionCode 2
+        versionName "1.0.1"
 
-        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
 
@@ -49,15 +49,15 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation "com.android.support:support-v4:$rootProject.supportLibraryVersion"
-    implementation "com.android.support:design:$rootProject.supportLibraryVersion"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation "com.google.android.material:material:1.0.0"
 
 //    implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'com.squareup.retrofit2:converter-gson:2.4.0'
 
     testImplementation 'junit:junit:4.12'
-    androidTestImplementation 'com.android.support.test:runner:1.0.2'
-    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.0'
 }
 
 //apply plugin: 'com.novoda.bintray-release'
@@ -70,7 +70,7 @@ dependencies {
 //    //原型id 类比'com.github.bumptech.glide:glide:3.7.0' 中的glide这一部分
 //    artifactId = 'x_utils'
 //    //版本号 类比'com.github.bumptech.glide:glide:3.7.0' 中的3.7.0 这一部分。很重要，我们在更新aar文件的时候需要提升版本号，类似更新apk
-//    publishVersion = '1.0.0'
+//    publishVersion = '1.0.1'
 //    //描述，大致介绍自己的类库
 //    desc = 'Oh hi,It is a utils library'
 //    //网址，可以写自己的github项目页面等

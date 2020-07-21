@@ -16,7 +16,7 @@
 
 package com.batman.ui.alpha;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 import com.batman.ui.R;

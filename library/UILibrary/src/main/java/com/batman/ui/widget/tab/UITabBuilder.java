@@ -18,7 +18,7 @@ package com.batman.ui.widget.tab;
 import android.content.Context;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.view.Gravity;
 
 import com.batman.ui.util.UIDisplayHelper;

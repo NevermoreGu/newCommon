@@ -17,8 +17,8 @@
 package com.batman.ui.qqface;
 
 import android.graphics.drawable.Drawable;
-import android.support.annotation.MainThread;
-import android.support.annotation.NonNull;
+import androidx.annotation.MainThread;
+import androidx.annotation.NonNull;
 import android.text.Spannable;
 import android.util.LruCache;
 

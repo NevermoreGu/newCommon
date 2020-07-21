@@ -3,7 +3,7 @@ package com.batman.utils;
 import android.graphics.Bitmap;
 import android.graphics.drawable.Drawable;
 import android.os.Parcelable;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import com.batman.utils.constant.CacheConstants;
 

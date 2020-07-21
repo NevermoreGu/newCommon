@@ -1,7 +1,7 @@
 package com.batman.logincomponent.viewmodel;
 
-import android.arch.lifecycle.LiveData;
-import android.support.annotation.NonNull;
+import androidx.lifecycle.LiveData;
+import androidx.annotation.NonNull;
 
 import com.batman.baselibrary.preference.UserResult;
 import com.batman.logincomponent.data.bean.result.CheckVerifyResult;

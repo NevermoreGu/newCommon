@@ -18,7 +18,7 @@ package com.batman.ui.widget.dialog;
 
 import android.content.Context;
 import android.graphics.Canvas;
-import android.support.annotation.Nullable;
+import androidx.annotation.Nullable;
 import android.util.AttributeSet;
 
 import com.batman.ui.layout.UIConstraintLayout;

@@ -16,7 +16,7 @@
 package com.batman.ui.skin.defaultAttr;
 
 
-import android.support.v4.util.SimpleArrayMap;
+import androidx.collection.SimpleArrayMap;
 
 public class UISkinSimpleDefaultAttrProvider implements IUISkinDefaultAttrProvider {
 

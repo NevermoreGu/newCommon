@@ -1,6 +1,6 @@
 package com.batman.utils;
 
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 import android.view.MotionEvent;
 import android.view.VelocityTracker;
 import android.view.View;

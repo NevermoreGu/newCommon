@@ -16,8 +16,8 @@
 package com.batman.ui.skin.handler;
 
 import android.content.res.ColorStateList;
-import android.support.annotation.NonNull;
-import android.support.v4.view.TintableBackgroundView;
+import androidx.annotation.NonNull;
+import androidx.core.view.TintableBackgroundView;
 import android.view.View;
 
 import com.batman.ui.skin.UISkinHelper;

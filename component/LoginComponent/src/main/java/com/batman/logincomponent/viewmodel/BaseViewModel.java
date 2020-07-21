@@ -1,6 +1,6 @@
 package com.batman.logincomponent.viewmodel;
 
-import android.arch.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModel;
 
 import com.batman.baselibrary.delegate.ApplicationDelegate;
 import com.batman.baselibrary.delegate.ApplicationDispatcher;

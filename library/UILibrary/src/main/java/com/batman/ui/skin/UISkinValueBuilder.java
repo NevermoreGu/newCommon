@@ -18,7 +18,7 @@ package com.batman.ui.skin;
 import java.util.HashMap;
 import java.util.LinkedList;
 
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 public class UISkinValueBuilder {
     public static final String BACKGROUND = "background";

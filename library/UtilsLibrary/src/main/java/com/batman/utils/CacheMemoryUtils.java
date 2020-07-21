@@ -1,7 +1,7 @@
 package com.batman.utils;
 
-import android.support.annotation.NonNull;
-import android.support.v4.util.LruCache;
+import androidx.annotation.NonNull;
+import androidx.collection.LruCache;
 
 import com.batman.utils.constant.CacheConstants;
 

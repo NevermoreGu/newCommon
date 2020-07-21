@@ -1,7 +1,7 @@
 package com.batman.utils;
 
 import android.app.Application;
-import android.support.v4.content.FileProvider;
+import androidx.core.content.FileProvider;
 
 public class UtilsFileProvider extends FileProvider {
 

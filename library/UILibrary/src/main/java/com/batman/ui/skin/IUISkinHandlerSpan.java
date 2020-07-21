@@ -16,7 +16,7 @@
 package com.batman.ui.skin;
 
 import android.content.res.Resources;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 import android.view.View;
 
 public interface IUISkinHandlerSpan {

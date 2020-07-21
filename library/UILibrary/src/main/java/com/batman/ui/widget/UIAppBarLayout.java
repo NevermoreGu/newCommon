@@ -18,9 +18,9 @@ package com.batman.ui.widget;
 
 import android.content.Context;
 import android.graphics.Rect;
-import android.support.design.widget.AppBarLayout;
-import android.support.v4.view.ViewCompat;
-import android.support.v4.view.WindowInsetsCompat;
+import com.google.android.material.appbar.AppBarLayout;
+import androidx.core.view.ViewCompat;
+import androidx.core.view.WindowInsetsCompat;
 import android.util.AttributeSet;
 import android.view.View;
 

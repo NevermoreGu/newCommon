@@ -2,7 +2,7 @@ package com.batman.baselibrary.delegate;
 
 import android.content.Context;
 import android.content.res.Configuration;
-import android.support.annotation.IntDef;
+import androidx.annotation.IntDef;
 
 public interface IApplicationDelegate {
 

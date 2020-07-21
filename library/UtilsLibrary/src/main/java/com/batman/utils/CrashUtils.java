@@ -2,7 +2,7 @@ package com.batman.utils;
 
 import android.annotation.SuppressLint;
 import android.os.Build;
-import android.support.annotation.NonNull;
+import androidx.annotation.NonNull;
 
 import java.io.File;
 import java.lang.Thread.UncaughtExceptionHandler;

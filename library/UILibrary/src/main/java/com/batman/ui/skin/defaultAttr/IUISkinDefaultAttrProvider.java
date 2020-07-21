@@ -16,8 +16,8 @@
 package com.batman.ui.skin.defaultAttr;
 
 
-import android.support.annotation.Nullable;
-import android.support.v4.util.SimpleArrayMap;
+import androidx.annotation.Nullable;
+import androidx.collection.SimpleArrayMap;
 
 public interface IUISkinDefaultAttrProvider {
     @Nullable

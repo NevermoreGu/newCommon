@@ -19,7 +19,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/group_list_item_imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -104,14 +104,14 @@
         app:layout_constraintLeft_toRightOf="@+id/group_list_item_textView"
         app:layout_constraintTop_toTopOf="@+id/group_list_item_textView" />
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/group_list_item_tips_new"
         android:contentDescription="Update tips"
         android:visibility="gone"
         style="?attr/UITipNewStyle"
         app:ui_skin_src="?attr/ui_skin_support_common_list_new_drawable"/>
 
-    <android.support.v7.widget.AppCompatImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/group_list_item_tips_dot"
         style="?attr/UITipPointStyle"
         android:contentDescription="Red dot"

@@ -16,9 +16,9 @@
 package com.batman.ui.skin.handler;
 
 import android.content.res.ColorStateList;
-import android.support.annotation.NonNull;
-import android.support.v4.widget.CompoundButtonCompat;
-import android.support.v4.widget.ImageViewCompat;
+import androidx.annotation.NonNull;
+import androidx.core.widget.CompoundButtonCompat;
+import androidx.core.widget.ImageViewCompat;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.ImageView;

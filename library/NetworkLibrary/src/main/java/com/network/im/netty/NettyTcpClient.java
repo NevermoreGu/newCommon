@@ -4,11 +4,10 @@ package com.network.im.netty;
 import android.content.Context;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
-import android.os.FileUtils;
-import android.support.annotation.NonNull;
+
+import androidx.annotation.NonNull;
 
 import com.network.im.ExecutorServiceFactory;
-import com.network.im.HeartbeatHandler;
 import com.network.im.IMOptions;
 import com.network.im.IMSConfig;
 import com.network.im.MsgDispatcher;
@@ -26,7 +25,6 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
 import java.util.Vector;
-import java.util.concurrent.TimeUnit;
 
 import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
