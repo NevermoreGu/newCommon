@@ -1,11 +1,9 @@
 package com.media.image.load;
 
 import android.content.Context;
-import android.graphics.Bitmap;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestListener;
-import com.bumptech.glide.request.target.Target;
 
 public class GlideImageLoader implements IImageLoader {
 
@@ -17,11 +15,11 @@ public class GlideImageLoader implements IImageLoader {
          */
         boolean flag;
         flag = isFlag(ctx);
-        if (flag) {
-//            loadNormal(ctx, img);
-        } else {
+//        if (flag) {
+            loadNormal(ctx, img, null);
+//        } else {
 //            loadCache(ctx, img);
-        }
+//        }
     }
 
     private boolean isFlag(Context ctx) {
@@ -42,22 +40,9 @@ public class GlideImageLoader implements IImageLoader {
     /**
      * load image with Glide
      */
-    private void loadNormal(Context ctx, ImageLoader img) {
+    private void loadNormal(Context ctx, ImageLoader img, RequestListener listener) {
 //        Glide.with(ctx).load(img.url()).placeholder(img.placeHolder()).into(img.imgView());
-        Glide.with(ctx).load(img.getUrl()).asBitmap().placeholder(img.getPlaceHolder()).listener(new RequestListener<String, Bitmap>() {
-            @Override
-            public boolean onException(Exception e, String model, Target<Bitmap> target, boolean isFirstResource) {
-                return false;
-            }
-
-            @Override
-            public boolean onResourceReady(Bitmap resource, String model, Target<Bitmap> target, boolean isFromMemoryCache, boolean isFirstResource) {
-//                if (delegate != null) {
-//                    delegate.onSuccess(imageView, finalPath);
-//                }
-                return false;
-            }
-        }).into(img.getImgView());
+        Glide.with(ctx).asBitmap().load(img.getUrl()).placeholder(img.getPlaceHolder()).listener(listener).into(img.getImgView());
     }
 
 
